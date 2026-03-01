@@ -1,0 +1,161 @@
+[gd_scene format=3 uid="uid://c78fsmfldx1uy"]
+
+[ext_resource type="Theme" uid="uid://caal0iyk0y32" path="res://default_theme.tres" id="1_1agyt"]
+[ext_resource type="Script" uid="uid://cbana6godty71" path="res://battle_ui.gd" id="2_hqdih"]
+[ext_resource type="PackedScene" uid="uid://bgdert5q87ro6" path="res://9_slice_window_default.tscn" id="2_p5pks"]
+[ext_resource type="PackedScene" uid="uid://c8a88jboveegw" path="res://player_char.tscn" id="3_3kkeu"]
+[ext_resource type="PackedScene" uid="uid://bs587h6hkiq7p" path="res://enemy_char.tscn" id="4_hqdih"]
+[ext_resource type="Script" uid="uid://b0abtmbow7qj6" path="res://menu.gd" id="4_uqb58"]
+
+[node name="Battle" type="Control" unique_id=1710281532]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_1agyt")
+script = ExtResource("2_hqdih")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=2032125197]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.8245548, 0.5994641, 0.23303752, 1)
+
+[node name="Bottom" type="HBoxContainer" parent="." unique_id=526166205]
+custom_minimum_size = Vector2(1200, 330)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -600.0
+offset_top = -310.0
+offset_right = 600.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="Enemies" parent="Bottom" unique_id=1097751707 instance=ExtResource("2_p5pks")]
+layout_mode = 2
+
+[node name="Players" parent="Bottom" unique_id=643111480 instance=ExtResource("2_p5pks")]
+layout_mode = 2
+size_flags_stretch_ratio = 1.66
+
+[node name="Options" parent="." unique_id=875866951 instance=ExtResource("2_p5pks")]
+custom_minimum_size = Vector2(320, 320)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -485.0
+offset_top = -326.0
+offset_right = -165.0
+offset_bottom = -6.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_stretch_ratio = 2.0
+
+[node name="Options" type="VBoxContainer" parent="Options" unique_id=2043208654]
+custom_minimum_size = Vector2(330, 330)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -6.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+script = ExtResource("4_uqb58")
+
+[node name="Fight" type="Button" parent="Options/Options" unique_id=1432165583]
+layout_mode = 2
+focus_neighbor_top = NodePath("../Item")
+theme_override_colors/font_focus_color = Color(0.9490196, 0, 0, 1)
+text = "Fight"
+
+[node name="Defend" type="Button" parent="Options/Options" unique_id=217117077]
+layout_mode = 2
+theme_override_colors/font_focus_color = Color(0.9490196, 0, 0, 1)
+text = "Defend"
+
+[node name="Ability" type="Button" parent="Options/Options" unique_id=754876610]
+layout_mode = 2
+theme_override_colors/font_focus_color = Color(0.9490196, 0, 0, 1)
+text = "Ability"
+
+[node name="Item" type="Button" parent="Options/Options" unique_id=421088500]
+layout_mode = 2
+focus_neighbor_bottom = NodePath("../Fight")
+theme_override_colors/font_focus_color = Color(0.9490196, 0, 0, 1)
+text = "Item"
+
+[node name="Players" type="Control" parent="." unique_id=673431543]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_lock_ = true
+
+[node name="PlayerChar" parent="Players" unique_id=580866747 instance=ExtResource("3_3kkeu")]
+layout_mode = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 160.0
+offset_bottom = 160.0
+
+[node name="PlayerChar2" parent="Players" unique_id=90073795 instance=ExtResource("3_3kkeu")]
+layout_mode = 0
+offset_left = 289.99997
+offset_top = 202.99998
+offset_right = 449.99997
+offset_bottom = 363.0
+
+[node name="PlayerChar3" parent="Players" unique_id=716384608 instance=ExtResource("3_3kkeu")]
+layout_mode = 0
+offset_left = 34.000015
+offset_top = 429.0
+offset_right = 194.00002
+offset_bottom = 589.0
+
+[node name="Enemies" type="Control" parent="." unique_id=116801843]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_lock_ = true
+
+[node name="EnemyChar" parent="Enemies" unique_id=102151364 instance=ExtResource("4_hqdih")]
+layout_mode = 0
+offset_top = 7.9999995
+offset_bottom = 168.0
+
+[node name="EnemyChar2" parent="Enemies" unique_id=1991767883 instance=ExtResource("4_hqdih")]
+layout_mode = 0
+offset_left = 1200.0
+offset_top = 168.99998
+offset_right = 1360.0
+offset_bottom = 329.0
+
+[node name="EnemyChar3" parent="Enemies" unique_id=657217066 instance=ExtResource("4_hqdih")]
+layout_mode = 0
+offset_left = 1479.0
+offset_top = 351.99997
+offset_right = 1639.0
+offset_bottom = 511.99997
+
+[connection signal="button_focused" from="Options/Options" to="." method="_on_options_button_focused"]
+[connection signal="button_pressed" from="Options/Options" to="." method="_on_options_button_pressed"]

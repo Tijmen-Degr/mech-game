@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b3cs7g28m2l51"
+path="res://.godot/imported/African4.mp3-66cd49ccd286c0b5ed1d1c7f47a53ee1.mp3str"
+
+[deps]
+
+source_file="res://UI/audio/UI Soundpack/UI Soundpack/MP3/African4.mp3"
+dest_files=["res://.godot/imported/African4.mp3-66cd49ccd286c0b5ed1d1c7f47a53ee1.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

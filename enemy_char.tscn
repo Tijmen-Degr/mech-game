@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://bs587h6hkiq7p"]
+
+[ext_resource type="Texture2D" uid="uid://cla7c3jro4l6u" path="res://Mechs/Lancer Tactics Mech Sprites V1.0/Lancer Tactics Sprite Pack/Main Frames/Gorgon/Gorgon front.png" id="1_x3jpg"]
+
+[node name="EnemyChar" type="TextureButton" unique_id=102151364]
+offset_left = 1473.9999
+offset_top = 22.999998
+offset_right = 1633.9999
+offset_bottom = 183.0
+scale = Vector2(2.5, 2.5)
+texture_normal = ExtResource("1_x3jpg")
+flip_h = true

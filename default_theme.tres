@@ -1,0 +1,23 @@
+[gd_resource type="Theme" format=3 uid="uid://caal0iyk0y32"]
+
+[ext_resource type="FontVariation" uid="uid://bbmrohu28h0sq" path="res://UI/Fonts/default_font.tres" id="1_e7bfs"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3taad"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7j863"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_50bnw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cefca"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ed8xq"]
+
+[resource]
+Button/font_sizes/font_size = 60
+Button/fonts/font = ExtResource("1_e7bfs")
+Button/styles/disabled = SubResource("StyleBoxEmpty_3taad")
+Button/styles/focus = SubResource("StyleBoxEmpty_7j863")
+Button/styles/hover = SubResource("StyleBoxEmpty_50bnw")
+Button/styles/normal = SubResource("StyleBoxEmpty_cefca")
+Button/styles/pressed = SubResource("StyleBoxEmpty_ed8xq")
+VBoxContainer/constants/separation = 20

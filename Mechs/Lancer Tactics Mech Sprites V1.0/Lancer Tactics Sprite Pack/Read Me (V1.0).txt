@@ -1,0 +1,78 @@
+V1.0
+___________________________________________________________________
+Thank you for downloading the Lancer Tactics Mech Sprite pack!
+
+This "Read Me" document will give a quick overview of how to best approach using and editing these sprites and tokens. When I learn how Lancer Tactics custom sprite mods can be implemented I'll also describe here how to mod in your own sprites!
+
+Both .psd and .clip files are included. I use clip studio as my main editor and I have not tested these in photoshop so mileage may vary (Though I wouldn't imagine there  would be any issues). I may try and get these converted for Aseprite if interest is there.
+___________________________________________________________________
+
+The purpose of the following layers in the .clip files is as follows:
+
+Palette- This contains both my default color palette for sprites on the right side, as well as the corresponding RGB color key that Lancer Tactics uses to read and edit colors.
+
+Referring to the Lancer Tactics color key, the red channel is color 1, which stylistically I tend to use for the main body colors (The gray color in the previews). I tend to adhere to using the bottom two colors for subframe coloring (such as for joints).
+
+The Green channel is color 2, which I use for accent colors (Which are red in the previews). I tend to limit myself to the 3rd from the top color on the ramp, the 4th color, and the 6th. No particular reason besides feeling like this creates a clean look, and I do not adhere to this rule consistently either so don't feel beholden to it when making edits.
+
+The Blue channel (Which is yellow in the previews) is what I call the energy channel, which I reserve for glowing eyes, glowing thrusters, and lit up details on the body.
+
+If you wish to figure out how to mod your sprite into Lancer Tactics then anything within the RGB color keys will get recolored to their respective channel, while any color outside these ranges will stay the same color. This is useful for leaving gunmetal unchanged by color channels, or for using more than 3 colorways on a sprite. You can even just ignore the RGB color key if you don't care if your sprite can have its colors editted in the game.
+
+Transparent layers will also get picked up by the game (Such as the mourning cloak's sprite) though be careful about any parts of a transparency layer that may overlap the body since that will cause the game to not read that color since it will be off from the color key. My tip to make sure this doesn't happen is to leave a transparent layer under opaque layers (You may notice that I don't follow this for all files. Do as I say, not as I do).
+
+Mech Folder:
+Color Key- The layer that I use to apply the color key that I talked about up above. If you are simply wishing to edit a sprite to use as a token then you can leave this layer invisible.
+
+Mech- The actual mech sprite. You can make edits on this layer if you want to edit, recolor, or draw over the current sprite.
+
+Scale Examples (Templates only):
+This folder contains examples of similarly sized mechs so if you are wanting to draw a new sprite to the same scale and proportions as the existing sprites, you can use these as a guide. The folder itself is set to 13% opacity but you can increase or decrease this as needed.
+
+Floor Tiles:
+Isometric tiles that roughly estimate the space the mech will take up. These are mainly as a reference and guide when drawing/editting.
+
+Canvas:
+Grid- This helps center mechs on the canvas to make sure their center mass remains in the middle.
+
+Canvas BG- This is the square that contains the mech. When cropping and saving a mech as a transparent sprite, use a magic wand to select the square you want before hiding it and it will make sure your crop is the correct size (80x80 for Size 1, or 1/2 size, 160x160 for size 2, or 240x240 for size 3)
+
+Make sure no parts of the sprite spill out from this square.
+
+Paper- Just the default background layer. This layer rather than white is gray to reduce eyestrain. A little tip from me to you.
+
+___________________________________________________________________
+
+General style tips when trying to edit or emulate my spriting style:
+
+1. The lines are not true black, they're a slightly blue off-black so use your eyedropper to pull the correct color from an existing sprite. The reason for this is true black looks too harsh against most colors.
+
+2. These sprites are lit from straight above, so if you want to match the lighting then keep this in mind.
+
+3. Remember that these sprites are in the isometric projection perspective. (If you're not sure what this means, I recommend looking it up since it's a long topic that I'm not fully equipped to describe here + it would take too long)
+
+4. I reserve the bottom two colors of color 1 for the sub-frame. Think of it like the skeleton of the mech that's peeking through the armor. These tend to be on joints and waists and include exposed engine blocks.
+
+5. Lancer tactics style guide tends to not use sharp highlights since these make the mech look too shiny (If you like shiny mechs then feel free to ignore this)
+
+6. 1/2 size mechs use the same canvas size as Size 1 mechs but just have roughly half the same mass.
+
+7. Flip your sprite to make sure it looks good facing left and right. If it looks weird one way but not the other, try double checking how the mass lines up with the grid layer.
+
+___________________________________________________________________
+
+If you wish to use these sprites as tokens for virtual tabletop sims then consider that you may not need the back sprite if orientation isn't important for your game. So if you're making edits you can save time by focusing on the front sprite!
+
+___________________________________________________________________
+
+For questions, typos, or to let me know how much you like my work you can always reach me on bsky @gentrigger.com
+
+You can also email me at gentrigger@outlook.com
+
+If this guide ended up in your hands but you don't know the source you can find the latest version for pay-what-you-want at https://gentrigger.itch.io/
+
+Trans rights are human rights!
+
+No AI was used in the creation of these assets or to write this guide. Every mistake is mine and mine alone baby!
+
+Special thanks to Wick Works for saving me from my awful desk job by hiring me to work on Lancer Tactics full time. Please buy it so they can justify an expansion! You can buy a copy at https://wick.itch.io/lancer-tactics
