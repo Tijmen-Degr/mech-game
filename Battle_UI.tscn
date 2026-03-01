@@ -140,8 +140,10 @@ metadata/_edit_lock_ = true
 
 [node name="EnemyChar" parent="Enemies" unique_id=102151364 instance=ExtResource("4_hqdih")]
 layout_mode = 0
-offset_top = 7.9999995
-offset_bottom = 168.0
+offset_left = 1492.0
+offset_top = 11.0
+offset_right = 1652.0
+offset_bottom = 171.0
 
 [node name="EnemyChar2" parent="Enemies" unique_id=1991767883 instance=ExtResource("4_hqdih")]
 layout_mode = 0
