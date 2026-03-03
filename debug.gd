@@ -1,5 +1,10 @@
 extends Node
 
+const PRINT_CURRENT_FOCUS: bool = true
+
+func _ready() -> void:
+	get_viewport().gui_focus_changed.connect(_on_viewport_gui_focus_changed)
+
 func _unhandled_key_input(event: InputEvent) -> void:
 	var debug_event : InputEventKey = event
 	if event.is_pressed():
@@ -14,3 +19,6 @@ func _unhandled_key_input(event: InputEvent) -> void:
 				var target_mode: int = DisplayServer.WINDOW_MODE_WINDOWED if is_fullscreen else DisplayServer.WINDOW_MODE_FULLSCREEN
 				DisplayServer.window_set_mode(target_mode)
 			
+func _on_viewport_gui_focus_changed(node: Control) -> void:
+	if PRINT_CURRENT_FOCUS: 
+		print(node)

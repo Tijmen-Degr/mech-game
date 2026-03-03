@@ -1,4 +1,4 @@
-class_name Menu extends Container
+class_name Menu extends Control
 
 signal button_focused(button: BaseButton)
 signal button_pressed(button: BaseButton)
@@ -20,11 +20,23 @@ func connect_to_buttons(target: Object, _name: String = name) -> void:
 	callable = Callable(target, "_on_" + _name + "_pressed")
 	button_pressed.connect(callable)
 
+func button_enable_focus(on: bool) -> void:
+	var mode: FocusMode = FocusMode.FOCUS_ALL if on else FocusMode.FOCUS_NONE
+	for button in get_buttons():
+		button.set_focus_mode(mode)
+
 func button_focus(n: int = index) -> void:
+	button_enable_focus(true)
 	var button: BaseButton = get_buttons()[n]
 	button.grab_focus()
 
+func _on_Button_focus_exited(button: BaseButton) -> void:
+	button_enable_focus(false)
+	#await get_tree().process_frame
+	#button.grab_focus()
+
 func _on_Button_focused(button: BaseButton) -> void:
+	index = button.get_index()
 	emit_signal("button_focused", button)
 
 func _on_Button_pressed(button: BaseButton) -> void:

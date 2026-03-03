@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://do5rkydhg61rw"]
+
+[ext_resource type="Texture2D" uid="uid://jaeg244fmoc0" path="res://UI/Cursors_v2/Light/Hands/Hand2.png" id="1_yx7ii"]
+[ext_resource type="Script" uid="uid://q2jl6b1yu3uw" path="res://menu_cursor.gd" id="2_yx7ii"]
+
+[node name="MenuCursor" type="TextureRect" unique_id=757116885]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1869.0
+offset_bottom = -1017.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 1.5707964
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("1_yx7ii")
+stretch_mode = 2
+script = ExtResource("2_yx7ii")

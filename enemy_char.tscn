@@ -1,12 +1,26 @@
 [gd_scene format=3 uid="uid://bs587h6hkiq7p"]
 
 [ext_resource type="Texture2D" uid="uid://cla7c3jro4l6u" path="res://Mechs/Lancer Tactics Mech Sprites V1.0/Lancer Tactics Sprite Pack/Main Frames/Gorgon/Gorgon front.png" id="1_x3jpg"]
+[ext_resource type="Script" uid="uid://bfpvn2ciu4o2q" path="res://Battle_enemy.gd" id="2_07p33"]
+[ext_resource type="PackedScene" uid="uid://dxx8efdao237v" path="res://atb_bar.tscn" id="3_m6o14"]
 
 [node name="EnemyChar" type="TextureButton" unique_id=102151364]
-offset_left = 1473.9999
-offset_top = 22.999998
-offset_right = 1633.9999
-offset_bottom = 183.0
+offset_left = -10.0
+offset_top = -63.0
+offset_right = 150.0
+offset_bottom = 97.0
 scale = Vector2(2.5, 2.5)
 texture_normal = ExtResource("1_x3jpg")
 flip_h = true
+script = ExtResource("2_07p33")
+
+[node name="ATB_bar" parent="." unique_id=2053159868 instance=ExtResource("3_m6o14")]
+custom_minimum_size = Vector2(100, 10)
+layout_mode = 0
+offset_left = -1.1999998
+offset_top = 80.0
+offset_right = 148.8
+offset_bottom = 107.0
+scale = Vector2(0.5, 0.5)
+value = 30.0
+show_percentage = false

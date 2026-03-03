@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://bq6rhr0ammca"]
+
+[ext_resource type="PackedScene" uid="uid://dxx8efdao237v" path="res://atb_bar.tscn" id="1_8u2c4"]
+[ext_resource type="Script" uid="uid://da10ki61k7qa" path="res://battle_player_bar.gd" id="1_047ae"]
+
+[sub_resource type="Animation" id="Animation_c1e1j"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_ds20c"]
+resource_name = "highlight"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0.6745098)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_46xdv"]
+_data = {
+&"RESET": SubResource("Animation_c1e1j"),
+&"highlight": SubResource("Animation_ds20c")
+}
+
+[node name="BattlePlayerBar" type="HBoxContainer" unique_id=2129352126]
+script = ExtResource("1_047ae")
+
+[node name="Name" type="Label" parent="." unique_id=1419259113]
+layout_mode = 2
+text = "Player"
+
+[node name="Health" type="Label" parent="." unique_id=1855637027]
+layout_mode = 2
+text = "9999"
+
+[node name="Energy" type="Label" parent="." unique_id=925715798]
+layout_mode = 2
+text = "999"
+
+[node name="ATB_bar" parent="." unique_id=2053159868 instance=ExtResource("1_8u2c4")]
+layout_mode = 2
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=660728014]
+libraries/ = SubResource("AnimationLibrary_46xdv")
+
+[connection signal="filled" from="ATB_bar" to="." method="_on_atb_bar_filled"]

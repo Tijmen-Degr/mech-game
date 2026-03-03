@@ -1,1 +1,1 @@
-class_name WindowDefault extends NinePatchRect
+class_name WindowDefault extends NinePatchRect 

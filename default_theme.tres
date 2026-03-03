@@ -1,6 +1,7 @@
 [gd_resource type="Theme" format=3 uid="uid://caal0iyk0y32"]
 
 [ext_resource type="FontVariation" uid="uid://bbmrohu28h0sq" path="res://UI/Fonts/default_font.tres" id="1_e7bfs"]
+[ext_resource type="FontFile" uid="uid://y26fwr31vjpl" path="res://UI/Fonts/Pixel Game.otf" id="2_3taad"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3taad"]
 
@@ -12,6 +13,17 @@
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ed8xq"]
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_u7cj8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uwdo0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nh3dc"]
+resource_local_to_scene = true
+bg_color = Color(0.28235295, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5sl4s"]
+bg_color = Color(0.4117647, 0.9372549, 0, 1)
+
 [resource]
 Button/font_sizes/font_size = 60
 Button/fonts/font = ExtResource("1_e7bfs")
@@ -20,4 +32,17 @@ Button/styles/focus = SubResource("StyleBoxEmpty_7j863")
 Button/styles/hover = SubResource("StyleBoxEmpty_50bnw")
 Button/styles/normal = SubResource("StyleBoxEmpty_cefca")
 Button/styles/pressed = SubResource("StyleBoxEmpty_ed8xq")
+HBoxContainer/constants/separation = 40
+Label/font_sizes/font_size = 60
+Label/fonts/font = ExtResource("2_3taad")
+Label/styles/focus = SubResource("StyleBoxEmpty_u7cj8")
+Label/styles/normal = SubResource("StyleBoxEmpty_uwdo0")
+MarginContainer/constants/margin_bottom = 20
+MarginContainer/constants/margin_left = 40
+MarginContainer/constants/margin_right = 40
+MarginContainer/constants/margin_top = 20
+ProgressBar/font_sizes/font_size = 40
+ProgressBar/fonts/font = ExtResource("1_e7bfs")
+ProgressBar/styles/background = SubResource("StyleBoxFlat_nh3dc")
+ProgressBar/styles/fill = SubResource("StyleBoxFlat_5sl4s")
 VBoxContainer/constants/separation = 20

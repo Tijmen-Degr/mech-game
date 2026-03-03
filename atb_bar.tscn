@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://dxx8efdao237v"]
+
+[ext_resource type="Script" uid="uid://y1opvrk0vfxn" path="res://atb_bar.gd" id="1_v1gex"]
+
+[node name="ATB_bar" type="ProgressBar" unique_id=2053159868]
+custom_minimum_size = Vector2(200, 20)
+size_flags_horizontal = 6
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0.28235295, 0, 0, 1)
+value = 69.0
+script = ExtResource("1_v1gex")
