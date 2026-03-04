@@ -2,6 +2,44 @@
 
 [ext_resource type="Script" uid="uid://y1opvrk0vfxn" path="res://atb_bar.gd" id="1_v1gex"]
 
+[sub_resource type="Animation" id="Animation_v1gex"]
+length = 0.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_2ksh8"]
+resource_name = "highlight"
+length = 0.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0.6901961, 1, 0, 1), Color(0, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_7qggq"]
+_data = {
+&"RESET": SubResource("Animation_v1gex"),
+&"highlight": SubResource("Animation_2ksh8")
+}
+
 [node name="ATB_bar" type="ProgressBar" unique_id=2053159868]
 custom_minimum_size = Vector2(200, 20)
 size_flags_horizontal = 6
@@ -9,3 +47,6 @@ size_flags_vertical = 4
 theme_override_colors/font_color = Color(0.28235295, 0, 0, 1)
 value = 69.0
 script = ExtResource("1_v1gex")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1373979521]
+libraries/ = SubResource("AnimationLibrary_7qggq")

@@ -1,16 +1,16 @@
 [gd_scene format=3 uid="uid://bs587h6hkiq7p"]
 
-[ext_resource type="Texture2D" uid="uid://cla7c3jro4l6u" path="res://Mechs/Lancer Tactics Mech Sprites V1.0/Lancer Tactics Sprite Pack/Main Frames/Gorgon/Gorgon front.png" id="1_x3jpg"]
+[ext_resource type="Texture2D" uid="uid://dkf0h85kl7i60" path="res://Mechs/Lancer Tactics Mech Sprites V1.0/Lancer Tactics Sprite Pack/Enemies/Archer alt front.png" id="1_07p33"]
 [ext_resource type="Script" uid="uid://bfpvn2ciu4o2q" path="res://Battle_enemy.gd" id="2_07p33"]
 [ext_resource type="PackedScene" uid="uid://dxx8efdao237v" path="res://atb_bar.tscn" id="3_m6o14"]
 
 [node name="EnemyChar" type="TextureButton" unique_id=102151364]
-offset_left = -10.0
-offset_top = -63.0
-offset_right = 150.0
-offset_bottom = 97.0
+offset_left = -1.000001
+offset_top = 2.9999924
+offset_right = 159.0
+offset_bottom = 163.0
 scale = Vector2(2.5, 2.5)
-texture_normal = ExtResource("1_x3jpg")
+texture_normal = ExtResource("1_07p33")
 flip_h = true
 script = ExtResource("2_07p33")
 

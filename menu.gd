@@ -31,8 +31,10 @@ func button_focus(n: int = index) -> void:
 	button.grab_focus()
 
 func _on_Button_focus_exited(button: BaseButton) -> void:
-	button_enable_focus(false)
-	#await get_tree().process_frame
+	await get_tree().process_frame
+	var focus_owner: Control = get_viewport().gui_get_focus_owner()
+	if not get_viewport().gui_get_focus_owner() in get_buttons():
+		button_enable_focus(false)
 	#button.grab_focus()
 
 func _on_Button_focused(button: BaseButton) -> void:

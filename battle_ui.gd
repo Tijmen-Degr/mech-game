@@ -14,6 +14,7 @@ var event_queue: Array = []
 @onready var _enemies_menu: Menu = $Enemies
 @onready var _players_menu: Menu = $Players
 @onready var _players_info: Array = $GUIMargin/Bottom/Players/MarginContainer/VBoxContainer.get_children()
+@onready var _cursor: MenuCursor = $MenuCursor
 
 func _ready() -> void:
 	_options.hide()
@@ -30,6 +31,23 @@ func _unhandled_input(event: InputEvent) -> void:
 				state = States.OPTIONS
 				_options_menu.button_focus()
 
+func advance_atb_queue() -> void:
+	if atb_queue.is_empty():
+		return
+		
+	var current_player: BattlePlayerBar = atb_queue.pop_front()
+	current_player.reset()
+	
+	var next_player: BattlePlayerBar = atb_queue.front()
+	if next_player:
+		next_player.highlight()
+		_options_menu.button_focus(0)
+	else:
+		get_viewport().gui_release_focus()
+		_options.hide()
+		_cursor.hide()
+	
+
 func _on_options_button_focused(button: BaseButton) -> void:
 	pass # Replace with function body.
 
@@ -41,9 +59,18 @@ func _on_options_button_pressed(button: BaseButton) -> void:
 
 func _on_player_atb_ready(player: BattlePlayerBar) -> void:
 	if atb_queue.is_empty():
-		player.highlight(true)
+		player.highlight()
 		_options.show()
 		_options_menu.button_focus(0)
 		
 	atb_queue.append(player)
-	
+
+
+func _on_enemies_button_pressed(button: BaseButton) -> void:
+	#TODO store event here
+	state = States.OPTIONS
+	advance_atb_queue()
+
+func _on_players_button_pressed(button: BaseButton) -> void:
+	#TODO store event here
+	advance_atb_queue()
