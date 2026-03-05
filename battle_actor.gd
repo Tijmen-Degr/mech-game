@@ -3,8 +3,12 @@ class_name BattleActor extends Resource
 signal hp_changed(hp, change)
 
 var name: String = "Archer"
-var hp_max: int = 1
+var hp_max: int = 30
 var hp: int = hp_max
+var strength: int = 10
+
+func set_name_custom(value: String) -> void:
+	name = value
 
 func healhurt(value: int) -> void:
 	var hp_start: int = hp

@@ -34,9 +34,10 @@ static func audio_play_varied_pitch_2d(node: AudioStreamPlayer2D, base_range: fl
 
 static func set_keys_to_names(dict: Dictionary) -> void:
 	var keys: Array = dict.keys()
+	#print(keys)
 	if dict[keys[0]] is RefCounted:
 		for key in keys:
-			dict[key].set_name(key)
+			dict[key].set_name_custom(key)
 	else:
 		print("Error: Dictionary must have instanced references in it. Exiting convert_keys_to_name()...")
 		

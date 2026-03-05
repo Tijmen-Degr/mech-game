@@ -11,6 +11,8 @@ func _ready() -> void:
 	value = randf_range(min_value, max_value * 0.75)
 
 func reset() -> void:
+	_anim.stop()
+	_anim.play("RESET") # or seek(0, true)
 	modulate = Color.WHITE
 	value = min_value
 	set_process(true)
@@ -18,8 +20,9 @@ func reset() -> void:
 func _process(_delta: float) -> void:
 	value += SPEED_BASE
 
-	if is_equal_approx(value, max_value):
-		_anim.play("highlight")
+	if value >= max_value:
+		value = max_value
 		set_process(false)
+		_anim.play("highlight")
 		filled.emit()
 		#todo begin animation

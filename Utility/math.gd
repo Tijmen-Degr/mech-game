@@ -1,6 +1,6 @@
 class_name Math extends Node
 
-enum Facing {
+enum facing {
 	RIGHT,
 	DOWN,
 	LEFT,
@@ -12,7 +12,7 @@ static func approach(val1, val2, amount):
 	if val1 < val2:
 		value = min(val1 + amount, val2)
 	elif val1 > val2:
-		value =max(val1 - amount, val2)
+		value = max(val1 - amount, val2)
 	else:
 		value = val1
 	return value
@@ -33,9 +33,9 @@ static func get_four_direction_vector(diagonal_allowed: bool) -> Vector2:
 	return velocity 
 	
 static func get_analog_vector() -> Vector2:
-		return Input.get_vector("ui left", "ui_right", "ui_down", "ui_up")
+		return Input.get_vector("ui_left", "ui_right", "ui_down", "ui_up")
 
-static func get_random_vector(snap: bool = false, min_x: float = -1.0, max_x: float = 1.0, min_y: float = -1.0) -> float: 
+static func get_random_vector(snap: bool = false, min_x: float = -1.0, max_x: float = 1.0, min_y: float = -1.0, max_y: float = 1.0) -> Vector2: 
 	var vector: Vector2 = Vector2(randf_range(min_x, max_x), randf_range(min_y, max_y))
 	if snap:
 		vector.x = round(vector.x)
@@ -49,7 +49,7 @@ static func convert_in_to_cm(value, step: float) -> float:
 	return snappedf(value * 2.54, step)
 
 static func convert_lb_to_kg(value, step: float) -> float:
-	return snappedf(value * 0,453592, step)
+	return snappedf(value * 0.453592, step)
 
 static func convert_vec2_to_facing_int(dir: Vector2) -> int:
 	if dir.y < 0:

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bq6rhr0ammca"]
 
 [ext_resource type="PackedScene" uid="uid://dxx8efdao237v" path="res://atb_bar.tscn" id="1_8u2c4"]
-[ext_resource type="Script" uid="uid://da10ki61k7qa" path="res://battle_player_bar.gd" id="1_047ae"]
+[ext_resource type="Script" uid="uid://da10ki61k7qa" path="res://player_info_bar.gd" id="1_047ae"]
 
 [sub_resource type="Animation" id="Animation_c1e1j"]
 length = 0.001
@@ -44,6 +44,7 @@ _data = {
 script = ExtResource("1_047ae")
 
 [node name="Name" type="Label" parent="." unique_id=1419259113]
+custom_minimum_size = Vector2(220, 0)
 layout_mode = 2
 text = "Player"
 
@@ -56,6 +57,7 @@ layout_mode = 2
 text = "999"
 
 [node name="ATB_bar" parent="." unique_id=2053159868 instance=ExtResource("1_8u2c4")]
+custom_minimum_size = Vector2(150, 20)
 layout_mode = 2
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=660728014]

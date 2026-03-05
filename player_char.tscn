@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://c8a88jboveegw"]
 
 [ext_resource type="Texture2D" uid="uid://vvns4v65s37q" path="res://Mechs/Lancer Tactics Mech Sprites V1.0/Lancer Tactics Sprite Pack/Main Frames/Balor/Balor Front.png" id="1_vtwlg"]
+[ext_resource type="Script" uid="uid://dag1klebmb60x" path="res://player_butt.gd" id="2_oe632"]
 
 [node name="PlayerChar" type="TextureButton" unique_id=580866747]
 offset_left = 25.000004
@@ -9,3 +10,4 @@ offset_right = 185.0
 offset_bottom = 210.0
 scale = Vector2(2.5, 2.5)
 texture_normal = ExtResource("1_vtwlg")
+script = ExtResource("2_oe632")

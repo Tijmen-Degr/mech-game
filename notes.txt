@@ -1,0 +1,7 @@
+
+
+#atb wait when actions are being perfomed
+#atb wait when in options
+	add toggle later
+delay when running through events
+if actor defeated choose random target
