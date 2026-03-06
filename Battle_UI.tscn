@@ -9,10 +9,183 @@
 [ext_resource type="Script" uid="uid://b0abtmbow7qj6" path="res://menu.gd" id="4_uqb58"]
 [ext_resource type="Texture2D" uid="uid://gmpmk4dr526d" path="res://Mechs/Lancer Tactics Mech Sprites V1.0/Lancer Tactics Sprite Pack/Main Frames/Deathshead/Deathshead Front.png" id="5_l2j3x"]
 [ext_resource type="Texture2D" uid="uid://bkxqu810dvc6x" path="res://Mechs/Lancer Tactics Mech Sprites V1.0/Lancer Tactics Sprite Pack/Main Frames/blackwitch/Witch front.png" id="6_p87y5"]
-[ext_resource type="Texture2D" uid="uid://cj68h8ktvt5p5" path="res://Mechs/Lancer Tactics Mech Sprites V1.0/Lancer Tactics Sprite Pack/Main Frames/Dusk Wing/Duskwing Front.png" id="7_63g5i"]
-[ext_resource type="Texture2D" uid="uid://bnyr1j5r2pf2x" path="res://Mechs/Lancer Tactics Mech Sprites V1.0/Lancer Tactics Sprite Pack/NPC Frames/Archer/Archer Front.png" id="10_l2j3x"]
+[ext_resource type="Texture2D" uid="uid://c341wersel8tc" path="res://explosion pack 1/Explosions pack/explosion-1-b/Sprites/explosion-1-b-1.png" id="7_omn40"]
+[ext_resource type="Texture2D" uid="uid://tfet666tl7c0" path="res://explosion pack 1/Explosions pack/explosion-1-f/Sprites/explosion-f1.png" id="7_rix6e"]
+[ext_resource type="Texture2D" uid="uid://dg5wtq7xp830t" path="res://explosion pack 1/Explosions pack/explosion-1-f/Sprites/explosion-f2.png" id="8_qfcwt"]
+[ext_resource type="Texture2D" uid="uid://fwsygli8vxx3" path="res://explosion pack 1/Explosions pack/explosion-1-b/Sprites/explosion-1-b-2.png" id="8_uo45s"]
+[ext_resource type="Texture2D" uid="uid://c0wohtvxchymk" path="res://explosion pack 1/Explosions pack/explosion-1-b/Sprites/explosion-1-b-3.png" id="9_noxdv"]
+[ext_resource type="Texture2D" uid="uid://c5rmwlvadhai6" path="res://explosion pack 1/Explosions pack/explosion-1-f/Sprites/explosion-f3.png" id="9_q7pr1"]
+[ext_resource type="Texture2D" uid="uid://dnpla6d7nrwuk" path="res://explosion pack 1/Explosions pack/explosion-1-b/Sprites/explosion-1-b-4.png" id="10_j1s85"]
+[ext_resource type="Texture2D" uid="uid://ck077dipeqivt" path="res://explosion pack 1/Explosions pack/explosion-1-f/Sprites/explosion-f4.png" id="10_omn40"]
+[ext_resource type="Texture2D" uid="uid://bt8h5t0asxql3" path="res://explosion pack 1/Explosions pack/explosion-1-b/Sprites/explosion-1-b-5.png" id="11_3ponb"]
+[ext_resource type="Texture2D" uid="uid://dwaignjcsnonm" path="res://explosion pack 1/Explosions pack/explosion-1-f/Sprites/explosion-f5.png" id="11_uo45s"]
+[ext_resource type="Texture2D" uid="uid://c7v4nyk83vkv3" path="res://explosion pack 1/Explosions pack/explosion-1-f/Sprites/explosion-f6.png" id="12_noxdv"]
+[ext_resource type="Texture2D" uid="uid://byoyhr5jk2x4e" path="res://explosion pack 1/Explosions pack/explosion-1-b/Sprites/explosion-1-b-6.png" id="12_sc88e"]
+[ext_resource type="Texture2D" uid="uid://dfrdq68twiodc" path="res://explosion pack 1/Explosions pack/explosion-1-b/Sprites/explosion-1-b-7.png" id="13_0echf"]
+[ext_resource type="Texture2D" uid="uid://cb4ohu8exx7eg" path="res://explosion pack 1/Explosions pack/explosion-1-f/Sprites/explosion-f7.png" id="13_j1s85"]
+[ext_resource type="Texture2D" uid="uid://0ofqx7eartcw" path="res://explosion pack 1/Explosions pack/explosion-1-f/Sprites/explosion-f8.png" id="14_3ponb"]
 [ext_resource type="PackedScene" uid="uid://bq6rhr0ammca" path="res://player_info_bar.tscn" id="14_63g5i"]
+[ext_resource type="Texture2D" uid="uid://bu0risfpl3p3t" path="res://explosion pack 1/Explosions pack/explosion-1-b/Sprites/explosion-1-b-8.png" id="14_soojm"]
+[ext_resource type="Texture2D" uid="uid://capwfkigc0ego" path="res://UI/kenney_cursor-pack/PNG/Basic/Double/selected.png" id="15_io607"]
 [ext_resource type="PackedScene" uid="uid://do5rkydhg61rw" path="res://menu_cursor.tscn" id="16_skffj"]
+[ext_resource type="Texture2D" uid="uid://bel4ggoqy6v5h" path="res://explosion pack 1/Explosions pack/explosion-1-g/Sprites/frame1.png" id="17_ygva1"]
+[ext_resource type="Texture2D" uid="uid://cdixp44pwr3j" path="res://explosion pack 1/Explosions pack/explosion-1-g/Sprites/frame2.png" id="18_4c5lh"]
+[ext_resource type="Texture2D" uid="uid://b4w1i58en7qer" path="res://explosion pack 1/Explosions pack/explosion-1-g/Sprites/frame3.png" id="19_v8th3"]
+[ext_resource type="Texture2D" uid="uid://bobhgg3mi3w2c" path="res://explosion pack 1/Explosions pack/explosion-1-g/Sprites/frame4.png" id="20_rasx4"]
+[ext_resource type="Texture2D" uid="uid://cmcm2475dbp4h" path="res://explosion pack 1/Explosions pack/explosion-1-g/Sprites/frame5.png" id="21_3pnn5"]
+[ext_resource type="Texture2D" uid="uid://33278e6hq2jg" path="res://explosion pack 1/Explosions pack/explosion-1-g/Sprites/frame6.png" id="22_io607"]
+[ext_resource type="Texture2D" uid="uid://dn4k03pukewc7" path="res://explosion pack 1/Explosions pack/explosion-1-g/Sprites/frame7.png" id="23_i88ae"]
+[ext_resource type="Texture2D" uid="uid://dusqmhbewygf" path="res://Mechs/Lancer Tactics Mech Sprites V1.0/Lancer Tactics Sprite Pack/Main Frames/Blackbeard/Blackbeard front.png" id="29_i88ae"]
+[ext_resource type="Texture2D" uid="uid://d3ikqq3hfds3w" path="res://explosion pack 1/Explosions pack/explosion-1-d/Sprites/explosion-d1.png" id="30_7pwg0"]
+[ext_resource type="Texture2D" uid="uid://7n8xtejfaiam" path="res://explosion pack 1/Explosions pack/explosion-1-d/Sprites/explosion-d2.png" id="31_pv2ks"]
+[ext_resource type="Texture2D" uid="uid://lq0jmeo7w1yx" path="res://explosion pack 1/Explosions pack/explosion-1-d/Sprites/explosion-d3.png" id="32_0xvj3"]
+[ext_resource type="Texture2D" uid="uid://djgpu3iq77j0w" path="res://explosion pack 1/Explosions pack/explosion-1-d/Sprites/explosion-d4.png" id="33_gqxmp"]
+[ext_resource type="Texture2D" uid="uid://bk3hqecgip6fy" path="res://explosion pack 1/Explosions pack/explosion-1-d/Sprites/explosion-d5.png" id="34_wcw1a"]
+[ext_resource type="Texture2D" uid="uid://b2p2u1qo2aj1" path="res://explosion pack 1/Explosions pack/explosion-1-d/Sprites/explosion-d6.png" id="35_tv0r1"]
+[ext_resource type="Texture2D" uid="uid://du2gevsqi1a0l" path="res://explosion pack 1/Explosions pack/explosion-1-d/Sprites/explosion-d7.png" id="36_w4yrp"]
+[ext_resource type="Texture2D" uid="uid://ww454ekm4eqn" path="res://explosion pack 1/Explosions pack/explosion-1-d/Sprites/explosion-d8.png" id="37_b545g"]
+[ext_resource type="Texture2D" uid="uid://bfg7akj2cec2" path="res://Mechs/Lancer Tactics Mech Sprites V1.0/Lancer Tactics Sprite Pack/Main Frames/Barbarossa/Barbarossa Front.png" id="37_i88ae"]
+[ext_resource type="Texture2D" uid="uid://bbec6r22v5gq5" path="res://explosion pack 1/Explosions pack/explosion-1-d/Sprites/explosion-d9.png" id="38_56kng"]
+[ext_resource type="Texture2D" uid="uid://cvdjp3f8dl5mk" path="res://explosion pack 1/Explosions pack/explosion-1-d/Sprites/explosion-d10.png" id="39_seg1g"]
+[ext_resource type="Texture2D" uid="uid://6j64dylqrnvi" path="res://explosion pack 1/Explosions pack/explosion-1-d/Sprites/explosion-d11.png" id="40_ifr3a"]
+[ext_resource type="Texture2D" uid="uid://ci6jiowfi2fmx" path="res://explosion pack 1/Explosions pack/explosion-1-d/Sprites/explosion-d12.png" id="41_aliyi"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rix6e"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_omn40")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_uo45s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_noxdv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_j1s85")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_3ponb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_sc88e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_0echf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_soojm")
+}],
+"loop": false,
+"name": &"explode",
+"speed": 10.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3pnn5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("30_7pwg0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_pv2ks")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_0xvj3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_gqxmp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_wcw1a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_tv0r1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_w4yrp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_b545g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_56kng")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_seg1g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_ifr3a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_aliyi")
+}],
+"loop": false,
+"name": &"explode",
+"speed": 10.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_b41ml"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_ygva1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_4c5lh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_v8th3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_rasx4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_3pnn5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_io607")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_i88ae")
+}],
+"loop": false,
+"name": &"explode",
+"speed": 10.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fyh61"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_rix6e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_qfcwt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_q7pr1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_omn40")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_uo45s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_noxdv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_j1s85")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_3ponb")
+}],
+"loop": false,
+"name": &"explode",
+"speed": 10.0
+}]
 
 [node name="Battle" type="Control" unique_id=1710281532]
 layout_mode = 3
@@ -57,52 +230,155 @@ offset_left = 230.99998
 offset_top = 113.99999
 offset_right = 311.0
 offset_bottom = 194.0
-focus_neighbor_left = NodePath("../../Enemies/EnemyButt2")
+focus_neighbor_left = NodePath("../PlayerButt2")
 focus_neighbor_top = NodePath("../PlayerButt4")
 focus_neighbor_right = NodePath("../PlayerButt2")
 focus_neighbor_bottom = NodePath("../PlayerButt4")
 texture_normal = ExtResource("5_l2j3x")
 
+[node name="Explosion" type="AnimatedSprite2D" parent="Players/PlayerButt" unique_id=1697734951]
+z_index = 10
+position = Vector2(29.881252, 32.13501)
+scale = Vector2(0.8962891, 0.8542189)
+sprite_frames = SubResource("SpriteFrames_rix6e")
+animation = &"explode"
+
+[node name="Selected" type="TextureRect" parent="Players/PlayerButt" unique_id=341830701]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -38.800003
+offset_top = -24.400003
+offset_right = 89.19999
+offset_bottom = 103.600006
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("15_io607")
+
 [node name="PlayerButt2" parent="Players" unique_id=90073795 instance=ExtResource("3_3kkeu")]
 z_index = -1
 layout_mode = 0
-offset_left = 435.0
-offset_top = 163.0
-offset_right = 515.0
-offset_bottom = 243.0
-scale = Vector2(3, 3)
+offset_left = 439.0
+offset_top = 105.000015
+offset_right = 519.0
+offset_bottom = 185.00002
+scale = Vector2(3.5, 3.5)
 focus_neighbor_left = NodePath("../PlayerButt")
 focus_neighbor_top = NodePath("../PlayerButt3")
-focus_neighbor_right = NodePath("../../Enemies/EnemyButt")
+focus_neighbor_right = NodePath("../PlayerButt")
 focus_neighbor_bottom = NodePath("../PlayerButt")
 texture_normal = ExtResource("6_p87y5")
+
+[node name="Explosion" type="AnimatedSprite2D" parent="Players/PlayerButt2" unique_id=1364358388]
+z_index = 10
+position = Vector2(38.333336, 14.666666)
+scale = Vector2(0.44921872, 0.733125)
+sprite_frames = SubResource("SpriteFrames_3pnn5")
+animation = &"explode"
+frame = 11
+frame_progress = 1.0
+
+[node name="Selected" type="TextureRect" parent="Players/PlayerButt2" unique_id=84924740]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -33.66666
+offset_top = -32.666664
+offset_right = 94.33334
+offset_bottom = 95.33333
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("15_io607")
 
 [node name="PlayerButt3" parent="Players" unique_id=716384608 instance=ExtResource("3_3kkeu")]
 z_index = -1
 layout_mode = 0
-offset_left = 429.00003
-offset_top = 382.00003
-offset_right = 509.00003
-offset_bottom = 462.00003
+offset_left = 459.00003
+offset_top = 407.0
+offset_right = 539.0
+offset_bottom = 487.0
 scale = Vector2(3, 3)
 focus_neighbor_left = NodePath("../PlayerButt4")
 focus_neighbor_top = NodePath("../PlayerButt2")
-focus_neighbor_right = NodePath("../../Enemies/EnemyButt3")
+focus_neighbor_right = NodePath("../PlayerButt4")
 focus_neighbor_bottom = NodePath("../PlayerButt2")
-texture_normal = ExtResource("7_63g5i")
+texture_normal = ExtResource("29_i88ae")
+
+[node name="Explosion" type="AnimatedSprite2D" parent="Players/PlayerButt3" unique_id=1560367698]
+visible = false
+z_index = 10
+position = Vector2(43.66664, 48.33332)
+scale = Vector2(1.4650172, 1.2786458)
+sprite_frames = SubResource("SpriteFrames_b41ml")
+animation = &"explode"
+frame = 6
+frame_progress = 1.0
+
+[node name="Selected" type="TextureRect" parent="Players/PlayerButt3" unique_id=2024126285]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -32.33334
+offset_top = -30.999998
+offset_right = 120.166626
+offset_bottom = 121.5
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("15_io607")
 
 [node name="PlayerButt4" parent="Players" unique_id=985707431 instance=ExtResource("3_3kkeu")]
 z_index = -1
 layout_mode = 0
-offset_left = 211.0
-offset_top = 427.0
-offset_right = 371.0
-offset_bottom = 587.0
+offset_left = 124.0
+offset_top = 403.00003
+offset_right = 364.0
+offset_bottom = 643.0
 scale = Vector2(1.5, 1.5)
-focus_neighbor_left = NodePath("../../Enemies/EnemyButt4")
+focus_neighbor_left = NodePath("../PlayerButt3")
 focus_neighbor_top = NodePath("../PlayerButt")
 focus_neighbor_right = NodePath("../PlayerButt3")
 focus_neighbor_bottom = NodePath("../PlayerButt")
+texture_normal = ExtResource("37_i88ae")
+
+[node name="Explosion" type="AnimatedSprite2D" parent="Players/PlayerButt4" unique_id=1704251088]
+z_index = 10
+position = Vector2(124.666664, 118.666626)
+scale = Vector2(3.166667, 3.8333328)
+sprite_frames = SubResource("SpriteFrames_fyh61")
+animation = &"explode"
+frame = 7
+frame_progress = 1.0
+
+[node name="Selected" type="TextureRect" parent="Players/PlayerButt4" unique_id=2071435613]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -78.0
+offset_top = -82.66669
+offset_right = 90.14818
+offset_bottom = 91.40735
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("15_io607")
 
 [node name="Enemies" type="Control" parent="." unique_id=116801843]
 layout_mode = 1
@@ -121,11 +397,10 @@ offset_top = 99.0
 offset_right = 1341.0
 offset_bottom = 179.0
 scale = Vector2(3, 3)
-focus_neighbor_left = NodePath("../../Players/PlayerButt2")
+focus_neighbor_left = NodePath("../EnemyButt2")
 focus_neighbor_top = NodePath("../EnemyButt3")
 focus_neighbor_right = NodePath("../EnemyButt2")
 focus_neighbor_bottom = NodePath("../EnemyButt3")
-texture_normal = ExtResource("10_l2j3x")
 
 [node name="EnemyButt2" parent="Enemies" unique_id=1991767883 instance=ExtResource("4_hqdih")]
 layout_mode = 0
@@ -136,9 +411,8 @@ offset_bottom = 179.0
 scale = Vector2(3, 3)
 focus_neighbor_left = NodePath("../EnemyButt")
 focus_neighbor_top = NodePath("../EnemyButt4")
-focus_neighbor_right = NodePath("../../Players/PlayerButt")
+focus_neighbor_right = NodePath("../EnemyButt")
 focus_neighbor_bottom = NodePath("../EnemyButt4")
-texture_normal = ExtResource("10_l2j3x")
 
 [node name="EnemyButt3" parent="Enemies" unique_id=657217066 instance=ExtResource("4_hqdih")]
 layout_mode = 0
@@ -147,11 +421,10 @@ offset_top = 373.0
 offset_right = 1395.0
 offset_bottom = 453.0
 scale = Vector2(3, 3)
-focus_neighbor_left = NodePath("../../Players/PlayerButt3")
+focus_neighbor_left = NodePath("../EnemyButt4")
 focus_neighbor_top = NodePath("../EnemyButt")
 focus_neighbor_right = NodePath("../EnemyButt4")
 focus_neighbor_bottom = NodePath("../EnemyButt")
-texture_normal = ExtResource("10_l2j3x")
 
 [node name="EnemyButt4" parent="Enemies" unique_id=1603137164 instance=ExtResource("4_hqdih")]
 layout_mode = 0
@@ -162,9 +435,8 @@ offset_bottom = 454.0
 scale = Vector2(3, 3)
 focus_neighbor_left = NodePath("../EnemyButt3")
 focus_neighbor_top = NodePath("../EnemyButt2")
-focus_neighbor_right = NodePath("../../Players/PlayerButt4")
+focus_neighbor_right = NodePath("../EnemyButt3")
 focus_neighbor_bottom = NodePath("../EnemyButt2")
-texture_normal = ExtResource("10_l2j3x")
 
 [node name="GUIMargin" type="MarginContainer" parent="." unique_id=1766032940]
 layout_mode = 1

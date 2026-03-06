@@ -1,0 +1,385 @@
+[gd_scene format=3 uid="uid://c78fsmfldx1uy"]
+
+[ext_resource type="Theme" uid="uid://caal0iyk0y32" path="res://default_theme.tres" id="1_1agyt"]
+[ext_resource type="Script" uid="uid://cbana6godty71" path="res://battle_ui.gd" id="2_hqdih"]
+[ext_resource type="PackedScene" uid="uid://bgdert5q87ro6" path="res://9_slice_window_default.tscn" id="2_p5pks"]
+[ext_resource type="PackedScene" uid="uid://c8a88jboveegw" path="res://player_char.tscn" id="3_3kkeu"]
+[ext_resource type="PackedScene" uid="uid://d0bo3tvptiv0k" path="res://Tiled_bg.tscn" id="3_l2j3x"]
+[ext_resource type="PackedScene" uid="uid://bs587h6hkiq7p" path="res://enemy_button.tscn" id="4_hqdih"]
+[ext_resource type="Script" uid="uid://b0abtmbow7qj6" path="res://menu.gd" id="4_uqb58"]
+[ext_resource type="Texture2D" uid="uid://gmpmk4dr526d" path="res://Mechs/Lancer Tactics Mech Sprites V1.0/Lancer Tactics Sprite Pack/Main Frames/Deathshead/Deathshead Front.png" id="5_l2j3x"]
+[ext_resource type="Texture2D" uid="uid://bkxqu810dvc6x" path="res://Mechs/Lancer Tactics Mech Sprites V1.0/Lancer Tactics Sprite Pack/Main Frames/blackwitch/Witch front.png" id="6_p87y5"]
+[ext_resource type="Texture2D" uid="uid://cj68h8ktvt5p5" path="res://Mechs/Lancer Tactics Mech Sprites V1.0/Lancer Tactics Sprite Pack/Main Frames/Dusk Wing/Duskwing Front.png" id="7_63g5i"]
+[ext_resource type="Texture2D" uid="uid://4u08i4ql2ou3" path="res://explosion pack 1/Explosions pack/explosion-1-c/Sprites/explosion-c1.png" id="7_abvrt"]
+[ext_resource type="Texture2D" uid="uid://c7vilru7c608n" path="res://explosion pack 1/Explosions pack/explosion-1-c/Sprites/explosion-c2.png" id="8_pg78m"]
+[ext_resource type="Texture2D" uid="uid://djqyoulssfeb1" path="res://explosion pack 1/Explosions pack/explosion-1-c/Sprites/explosion-c3.png" id="9_fv2q3"]
+[ext_resource type="Texture2D" uid="uid://cp4cwdjpw2uxq" path="res://explosion pack 1/Explosions pack/explosion-1-c/Sprites/explosion-c4.png" id="10_2cnwd"]
+[ext_resource type="Texture2D" uid="uid://bnyr1j5r2pf2x" path="res://Mechs/Lancer Tactics Mech Sprites V1.0/Lancer Tactics Sprite Pack/NPC Frames/Archer/Archer Front.png" id="10_l2j3x"]
+[ext_resource type="Texture2D" uid="uid://doylc33t0ykv2" path="res://explosion pack 1/Explosions pack/explosion-1-c/Sprites/explosion-c5.png" id="11_cnudl"]
+[ext_resource type="Texture2D" uid="uid://cxd0k3445u5im" path="res://explosion pack 1/Explosions pack/explosion-1-c/Sprites/explosion-c6.png" id="12_my0tw"]
+[ext_resource type="Texture2D" uid="uid://dbwpupgjoefmx" path="res://explosion pack 1/Explosions pack/explosion-1-c/Sprites/explosion-c7.png" id="13_pc2kj"]
+[ext_resource type="Texture2D" uid="uid://crempsgwrulp2" path="res://explosion pack 1/Explosions pack/explosion-1-c/Sprites/explosion-c8.png" id="14_0cfrh"]
+[ext_resource type="PackedScene" uid="uid://bq6rhr0ammca" path="res://player_info_bar.tscn" id="14_63g5i"]
+[ext_resource type="Texture2D" uid="uid://xnu7p0y6wfx7" path="res://explosion pack 1/Explosions pack/explosion-1-c/Sprites/explosion-c9.png" id="15_xh7qm"]
+[ext_resource type="PackedScene" uid="uid://do5rkydhg61rw" path="res://menu_cursor.tscn" id="16_skffj"]
+[ext_resource type="Texture2D" uid="uid://b50sc6gfnjt7u" path="res://explosion pack 1/Explosions pack/explosion-1-c/Sprites/explosion-c10.png" id="16_y3064"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rix6e"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_abvrt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_pg78m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_fv2q3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_2cnwd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_cnudl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_my0tw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_pc2kj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_0cfrh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_xh7qm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_y3064")
+}],
+"loop": true,
+"name": &"default",
+"speed": 30.0
+}]
+
+[node name="Battle" type="Control" unique_id=1710281532]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_1agyt")
+script = ExtResource("2_hqdih")
+
+[node name="Node2D" parent="." unique_id=82154139 instance=ExtResource("3_l2j3x")]
+z_index = -1
+position = Vector2(-456.99997, 90.99999)
+scale = Vector2(1, 0.9992346)
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=2032125197]
+z_index = -2
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1, 0.9992346)
+color = Color(0.8245548, 0.5994641, 0.23303752, 1)
+
+[node name="Players" type="Control" parent="." unique_id=673431543]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("4_uqb58")
+metadata/_edit_lock_ = true
+
+[node name="PlayerButt" parent="Players" unique_id=580866747 instance=ExtResource("3_3kkeu")]
+z_index = -1
+layout_mode = 0
+offset_left = 230.99998
+offset_top = 113.99999
+offset_right = 311.0
+offset_bottom = 194.0
+focus_neighbor_left = NodePath("../../Enemies/EnemyButt2")
+focus_neighbor_top = NodePath("../PlayerButt4")
+focus_neighbor_right = NodePath("../PlayerButt2")
+focus_neighbor_bottom = NodePath("../PlayerButt4")
+texture_normal = ExtResource("5_l2j3x")
+
+[node name="Explosion" type="AnimatedSprite2D" parent="Players/PlayerButt" unique_id=1704251088]
+z_index = 10
+position = Vector2(34.800003, 28.800001)
+scale = Vector2(0.590625, 1)
+sprite_frames = SubResource("SpriteFrames_rix6e")
+frame_progress = 0.075188324
+
+[node name="PlayerButt2" parent="Players" unique_id=90073795 instance=ExtResource("3_3kkeu")]
+z_index = -1
+layout_mode = 0
+offset_left = 435.0
+offset_top = 163.0
+offset_right = 515.0
+offset_bottom = 243.0
+scale = Vector2(3, 3)
+focus_neighbor_left = NodePath("../PlayerButt")
+focus_neighbor_top = NodePath("../PlayerButt3")
+focus_neighbor_right = NodePath("../../Enemies/EnemyButt")
+focus_neighbor_bottom = NodePath("../PlayerButt")
+texture_normal = ExtResource("6_p87y5")
+
+[node name="PlayerButt3" parent="Players" unique_id=716384608 instance=ExtResource("3_3kkeu")]
+z_index = -1
+layout_mode = 0
+offset_left = 429.00003
+offset_top = 382.00003
+offset_right = 509.00003
+offset_bottom = 462.00003
+scale = Vector2(3, 3)
+focus_neighbor_left = NodePath("../PlayerButt4")
+focus_neighbor_top = NodePath("../PlayerButt2")
+focus_neighbor_right = NodePath("../../Enemies/EnemyButt3")
+focus_neighbor_bottom = NodePath("../PlayerButt2")
+texture_normal = ExtResource("7_63g5i")
+
+[node name="PlayerButt4" parent="Players" unique_id=985707431 instance=ExtResource("3_3kkeu")]
+z_index = -1
+layout_mode = 0
+offset_left = 211.0
+offset_top = 427.0
+offset_right = 371.0
+offset_bottom = 587.0
+scale = Vector2(1.5, 1.5)
+focus_neighbor_left = NodePath("../../Enemies/EnemyButt4")
+focus_neighbor_top = NodePath("../PlayerButt")
+focus_neighbor_right = NodePath("../PlayerButt3")
+focus_neighbor_bottom = NodePath("../PlayerButt")
+
+[node name="Enemies" type="Control" parent="." unique_id=116801843]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("4_uqb58")
+metadata/_edit_lock_ = true
+
+[node name="EnemyButt" parent="Enemies" unique_id=102151364 instance=ExtResource("4_hqdih")]
+layout_mode = 0
+offset_left = 1261.0
+offset_top = 99.0
+offset_right = 1341.0
+offset_bottom = 179.0
+scale = Vector2(3, 3)
+focus_neighbor_left = NodePath("../../Players/PlayerButt2")
+focus_neighbor_top = NodePath("../EnemyButt3")
+focus_neighbor_right = NodePath("../EnemyButt2")
+focus_neighbor_bottom = NodePath("../EnemyButt3")
+texture_normal = ExtResource("10_l2j3x")
+
+[node name="EnemyButt2" parent="Enemies" unique_id=1991767883 instance=ExtResource("4_hqdih")]
+layout_mode = 0
+offset_left = 1525.0
+offset_top = 99.0
+offset_right = 1605.0
+offset_bottom = 179.0
+scale = Vector2(3, 3)
+focus_neighbor_left = NodePath("../EnemyButt")
+focus_neighbor_top = NodePath("../EnemyButt4")
+focus_neighbor_right = NodePath("../../Players/PlayerButt")
+focus_neighbor_bottom = NodePath("../EnemyButt4")
+texture_normal = ExtResource("10_l2j3x")
+
+[node name="EnemyButt3" parent="Enemies" unique_id=657217066 instance=ExtResource("4_hqdih")]
+layout_mode = 0
+offset_left = 1315.0
+offset_top = 373.0
+offset_right = 1395.0
+offset_bottom = 453.0
+scale = Vector2(3, 3)
+focus_neighbor_left = NodePath("../../Players/PlayerButt3")
+focus_neighbor_top = NodePath("../EnemyButt")
+focus_neighbor_right = NodePath("../EnemyButt4")
+focus_neighbor_bottom = NodePath("../EnemyButt")
+texture_normal = ExtResource("10_l2j3x")
+
+[node name="EnemyButt4" parent="Enemies" unique_id=1603137164 instance=ExtResource("4_hqdih")]
+layout_mode = 0
+offset_left = 1581.0
+offset_top = 374.0
+offset_right = 1661.0
+offset_bottom = 454.0
+scale = Vector2(3, 3)
+focus_neighbor_left = NodePath("../EnemyButt3")
+focus_neighbor_top = NodePath("../EnemyButt2")
+focus_neighbor_right = NodePath("../../Players/PlayerButt4")
+focus_neighbor_bottom = NodePath("../EnemyButt2")
+texture_normal = ExtResource("10_l2j3x")
+
+[node name="GUIMargin" type="MarginContainer" parent="." unique_id=1766032940]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -9.0
+offset_bottom = 9.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_lock_ = true
+
+[node name="Bottom" type="HBoxContainer" parent="GUIMargin" unique_id=526166205]
+custom_minimum_size = Vector2(1200, 330)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="Enemies" parent="GUIMargin/Bottom" unique_id=1097751707 instance=ExtResource("2_p5pks")]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="GUIMargin/Bottom/Enemies" unique_id=1996543614]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -9.0
+offset_bottom = 9.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="GUIMargin/Bottom/Enemies/MarginContainer" unique_id=1998046402]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="GUIMargin/Bottom/Enemies/MarginContainer/VBoxContainer" unique_id=2114248681]
+layout_mode = 2
+text = "Enemy"
+
+[node name="Label2" type="Label" parent="GUIMargin/Bottom/Enemies/MarginContainer/VBoxContainer" unique_id=1711698489]
+layout_mode = 2
+text = "Enemy"
+
+[node name="Label3" type="Label" parent="GUIMargin/Bottom/Enemies/MarginContainer/VBoxContainer" unique_id=1783506850]
+layout_mode = 2
+text = "Enemy"
+
+[node name="Label4" type="Label" parent="GUIMargin/Bottom/Enemies/MarginContainer/VBoxContainer" unique_id=2026758796]
+layout_mode = 2
+text = "Enemy"
+
+[node name="Players" parent="GUIMargin/Bottom" unique_id=643111480 instance=ExtResource("2_p5pks")]
+layout_mode = 2
+size_flags_stretch_ratio = 1.66
+
+[node name="MarginContainer" type="MarginContainer" parent="GUIMargin/Bottom/Players" unique_id=118832431]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = -7.0
+offset_right = -2.0
+offset_bottom = 11.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="GUIMargin/Bottom/Players/MarginContainer" unique_id=2091982646]
+layout_mode = 2
+
+[node name="PlayerInfoBar" parent="GUIMargin/Bottom/Players/MarginContainer/VBoxContainer" unique_id=2129352126 instance=ExtResource("14_63g5i")]
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="PlayerInfoBar2" parent="GUIMargin/Bottom/Players/MarginContainer/VBoxContainer" unique_id=857920192 instance=ExtResource("14_63g5i")]
+layout_mode = 2
+
+[node name="PlayerInfoBar3" parent="GUIMargin/Bottom/Players/MarginContainer/VBoxContainer" unique_id=1552851123 instance=ExtResource("14_63g5i")]
+layout_mode = 2
+
+[node name="PlayerInfoBar4" parent="GUIMargin/Bottom/Players/MarginContainer/VBoxContainer" unique_id=1188017833 instance=ExtResource("14_63g5i")]
+layout_mode = 2
+
+[node name="Options" parent="." unique_id=875866951 instance=ExtResource("2_p5pks")]
+custom_minimum_size = Vector2(300, 320)
+layout_mode = 0
+offset_left = 490.0
+offset_top = 745.0
+offset_right = 790.0
+offset_bottom = 1065.0
+size_flags_horizontal = 0
+size_flags_vertical = 8
+size_flags_stretch_ratio = 2.0
+
+[node name="Options" type="VBoxContainer" parent="Options" unique_id=2043208654]
+custom_minimum_size = Vector2(330, 330)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -6.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+script = ExtResource("4_uqb58")
+
+[node name="Fight" type="Button" parent="Options/Options" unique_id=1432165583]
+layout_mode = 2
+size_flags_horizontal = 4
+focus_neighbor_left = NodePath(".")
+focus_neighbor_top = NodePath("../Item")
+focus_neighbor_right = NodePath(".")
+focus_neighbor_bottom = NodePath("../Defend")
+theme_override_colors/font_focus_color = Color(0.9490196, 0, 0, 1)
+text = "Fight"
+
+[node name="Defend" type="Button" parent="Options/Options" unique_id=217117077]
+layout_mode = 2
+size_flags_horizontal = 4
+focus_neighbor_left = NodePath(".")
+focus_neighbor_top = NodePath("../Fight")
+focus_neighbor_right = NodePath(".")
+focus_neighbor_bottom = NodePath("../Ability")
+theme_override_colors/font_focus_color = Color(0.9490196, 0, 0, 1)
+text = "Defend"
+
+[node name="Ability" type="Button" parent="Options/Options" unique_id=754876610]
+layout_mode = 2
+size_flags_horizontal = 4
+focus_neighbor_left = NodePath(".")
+focus_neighbor_top = NodePath("../Defend")
+focus_neighbor_right = NodePath(".")
+focus_neighbor_bottom = NodePath("../Item")
+theme_override_colors/font_focus_color = Color(0.9490196, 0, 0, 1)
+text = "Ability"
+
+[node name="Item" type="Button" parent="Options/Options" unique_id=421088500]
+layout_mode = 2
+size_flags_horizontal = 4
+focus_neighbor_left = NodePath(".")
+focus_neighbor_top = NodePath("../Ability")
+focus_neighbor_right = NodePath(".")
+focus_neighbor_bottom = NodePath("../Fight")
+theme_override_colors/font_focus_color = Color(0.9490196, 0, 0, 1)
+text = "Item"
+
+[node name="MenuCursor" parent="." unique_id=757116885 instance=ExtResource("16_skffj")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 562.0
+offset_top = 750.0
+offset_right = 613.0
+offset_bottom = 813.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[connection signal="button_pressed" from="Players" to="." method="_on_players_button_pressed"]
+[connection signal="button_pressed" from="Enemies" to="." method="_on_enemies_button_pressed"]
+[connection signal="button_focused" from="Options/Options" to="." method="_on_options_button_focused"]
+[connection signal="button_pressed" from="Options/Options" to="." method="_on_options_button_pressed"]

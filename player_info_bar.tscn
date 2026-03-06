@@ -44,20 +44,24 @@ _data = {
 script = ExtResource("1_047ae")
 
 [node name="Name" type="Label" parent="." unique_id=1419259113]
-custom_minimum_size = Vector2(220, 0)
+custom_minimum_size = Vector2(280, 0)
 layout_mode = 2
 text = "Player"
 
 [node name="Health" type="Label" parent="." unique_id=1855637027]
+custom_minimum_size = Vector2(60, 0)
 layout_mode = 2
 text = "9999"
+horizontal_alignment = 2
 
 [node name="Energy" type="Label" parent="." unique_id=925715798]
+custom_minimum_size = Vector2(40, 0)
 layout_mode = 2
 text = "999"
+horizontal_alignment = 2
 
 [node name="ATB_bar" parent="." unique_id=2053159868 instance=ExtResource("1_8u2c4")]
-custom_minimum_size = Vector2(150, 20)
+custom_minimum_size = Vector2(160, 20)
 layout_mode = 2
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=660728014]

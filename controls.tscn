@@ -1,0 +1,491 @@
+[gd_scene format=3 uid="uid://b1mhoc1n2og30"]
+
+[ext_resource type="PackedScene" uid="uid://d0bo3tvptiv0k" path="res://Tiled_bg.tscn" id="1_j6suo"]
+[ext_resource type="Script" uid="uid://bu2x4xe8yrk3k" path="res://main_menu.gd" id="2_0bx74"]
+[ext_resource type="Texture2D" uid="uid://eeg1i2aoxx6m" path="res://Cog Wheels - Gears/Cog Wheels - Gears/Sprites/Bronze Gear Wheels/Gear 1 - Bronze_00.png" id="3_lws25"]
+[ext_resource type="Texture2D" uid="uid://dm5fgbi4725gi" path="res://Cog Wheels - Gears/Cog Wheels - Gears/Sprites/Bronze Gear Wheels/Gear 2 - Bronze_03.png" id="4_5nh1m"]
+[ext_resource type="Texture2D" uid="uid://vjrj0rh4fyqe" path="res://Cog Wheels - Gears/Cog Wheels - Gears/Sprites/Bronze Gear Wheels/Gear 5 - Bronze_01.png" id="5_qlgyb"]
+[ext_resource type="Texture2D" uid="uid://dd4im4jhw6bnn" path="res://Cog Wheels - Gears/Cog Wheels - Gears/Sprites/Silver Gear Wheels/Gear 1 - Silver_00.png" id="6_bkxcj"]
+[ext_resource type="Texture2D" uid="uid://cxowd8na5c2nn" path="res://Cog Wheels - Gears/Cog Wheels - Gears/Sprites/Silver Gear Wheels/Gear 2 - Silver_02.png" id="7_qv3vg"]
+[ext_resource type="Texture2D" uid="uid://d2j1hn016un0f" path="res://Cog Wheels - Gears/Cog Wheels - Gears/Sprites/Silver Gear Wheels/Gear 5 - Silver_01.png" id="8_qaier"]
+[ext_resource type="PackedScene" uid="uid://bgdert5q87ro6" path="res://9_slice_window_default.tscn" id="9_yt4ka"]
+[ext_resource type="Texture2D" uid="uid://bjbbek4mmymcb" path="res://UI/NineSlice/ExampleSpriteGold.png" id="10_2tbsb"]
+[ext_resource type="Theme" uid="uid://caal0iyk0y32" path="res://default_theme.tres" id="11_oqohv"]
+[ext_resource type="Texture2D" uid="uid://bmhbdmw20ckbg" path="res://UI/Complete_UI_Essential_Pack_Free/01_Flat_Theme/Sprites/UI_Flat_FrameSlot02a.png" id="12_vli6s"]
+[ext_resource type="Texture2D" uid="uid://q01op44hepbp" path="res://UI/Complete_UI_Essential_Pack_Free/01_Flat_Theme/Sprites/UI_Flat_FrameSlot02b.png" id="13_25a0c"]
+[ext_resource type="Texture2D" uid="uid://dkvq65wigtp8o" path="res://UI/Complete_UI_Essential_Pack_Free/01_Flat_Theme/Sprites/UI_Flat_FrameMarker02a.png" id="14_swll3"]
+
+[node name="Controls" type="Node2D" unique_id=1202430635]
+
+[node name="Node2D" parent="." unique_id=82154139 instance=ExtResource("1_j6suo")]
+z_index = -1
+position = Vector2(-564, -576)
+scale = Vector2(1, 0.9992346)
+
+[node name="Butt_manager" type="Control" parent="." unique_id=1435686891]
+custom_minimum_size = Vector2(1920, 1080)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_right = 1921.0
+offset_bottom = 1080.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+script = ExtResource("2_0bx74")
+metadata/_edit_lock_ = true
+
+[node name="Deco" type="TextureRect" parent="Butt_manager" unique_id=955769104]
+z_index = 10
+layout_mode = 0
+offset_left = 1504.0
+offset_top = 728.00006
+offset_right = 1547.0
+offset_bottom = 771.00006
+texture = ExtResource("3_lws25")
+stretch_mode = 2
+
+[node name="Deco2" type="TextureRect" parent="Butt_manager" unique_id=934948648]
+z_index = 10
+layout_mode = 0
+offset_left = 1475.0
+offset_top = 699.00006
+offset_right = 1518.0
+offset_bottom = 742.00006
+texture = ExtResource("4_5nh1m")
+stretch_mode = 2
+
+[node name="Deco3" type="TextureRect" parent="Butt_manager" unique_id=2095016852]
+z_index = 10
+layout_mode = 0
+offset_left = 1510.9999
+offset_top = 689.1
+offset_right = 1553.9999
+offset_bottom = 729.1
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("5_qlgyb")
+stretch_mode = 2
+
+[node name="Deco7" type="TextureRect" parent="Butt_manager" unique_id=4970642]
+z_index = 10
+layout_mode = 0
+offset_left = 1472.0
+offset_top = 784.0001
+offset_right = 1515.0
+offset_bottom = 827.0001
+texture = ExtResource("3_lws25")
+stretch_mode = 2
+
+[node name="Deco8" type="TextureRect" parent="Butt_manager" unique_id=370396744]
+z_index = 10
+layout_mode = 0
+offset_left = 1443.0
+offset_top = 755.0001
+offset_right = 1486.0
+offset_bottom = 798.0001
+texture = ExtResource("4_5nh1m")
+stretch_mode = 2
+
+[node name="Deco9" type="TextureRect" parent="Butt_manager" unique_id=78633234]
+z_index = 10
+layout_mode = 0
+offset_left = 1478.9999
+offset_top = 745.10004
+offset_right = 1521.9999
+offset_bottom = 785.10004
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("5_qlgyb")
+stretch_mode = 2
+
+[node name="Deco13" type="TextureRect" parent="Butt_manager" unique_id=1066092196]
+z_index = 10
+layout_mode = 0
+offset_left = 1437.0
+offset_top = 842.0001
+offset_right = 1480.0
+offset_bottom = 885.0001
+texture = ExtResource("3_lws25")
+stretch_mode = 2
+
+[node name="Deco14" type="TextureRect" parent="Butt_manager" unique_id=1036986830]
+z_index = 10
+layout_mode = 0
+offset_left = 1408.0
+offset_top = 813.0001
+offset_right = 1451.0
+offset_bottom = 856.0001
+texture = ExtResource("4_5nh1m")
+stretch_mode = 2
+
+[node name="Deco15" type="TextureRect" parent="Butt_manager" unique_id=276801892]
+z_index = 10
+layout_mode = 0
+offset_left = 1443.9999
+offset_top = 803.10004
+offset_right = 1486.9999
+offset_bottom = 843.10004
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("5_qlgyb")
+stretch_mode = 2
+
+[node name="Deco10" type="TextureRect" parent="Butt_manager" unique_id=614031164]
+z_index = 10
+layout_mode = 0
+offset_left = 1504.0
+offset_top = 856.00006
+offset_right = 1547.0
+offset_bottom = 899.00006
+texture = ExtResource("3_lws25")
+stretch_mode = 2
+
+[node name="Deco11" type="TextureRect" parent="Butt_manager" unique_id=450452529]
+z_index = 10
+layout_mode = 0
+offset_left = 1475.0
+offset_top = 827.00006
+offset_right = 1518.0
+offset_bottom = 870.00006
+texture = ExtResource("4_5nh1m")
+stretch_mode = 2
+
+[node name="Deco12" type="TextureRect" parent="Butt_manager" unique_id=245826368]
+z_index = 10
+layout_mode = 0
+offset_left = 1511.0001
+offset_top = 817.1
+offset_right = 1554.0001
+offset_bottom = 857.1
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("5_qlgyb")
+stretch_mode = 2
+
+[node name="Deco4" type="TextureRect" parent="Butt_manager" unique_id=1944001386]
+z_index = 10
+layout_mode = 0
+offset_left = 403.0
+offset_top = 856.00006
+offset_right = 446.0
+offset_bottom = 899.00006
+texture = ExtResource("6_bkxcj")
+stretch_mode = 2
+
+[node name="Deco5" type="TextureRect" parent="Butt_manager" unique_id=1145783884]
+z_index = 10
+layout_mode = 0
+offset_left = 374.0
+offset_top = 827.00006
+offset_right = 417.0
+offset_bottom = 870.00006
+texture = ExtResource("7_qv3vg")
+stretch_mode = 2
+
+[node name="Deco6" type="TextureRect" parent="Butt_manager" unique_id=1470056449]
+z_index = 10
+layout_mode = 0
+offset_left = 409.9999
+offset_top = 817.1
+offset_right = 452.9999
+offset_bottom = 860.1
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("8_qaier")
+stretch_mode = 2
+
+[node name="Deco16" type="TextureRect" parent="Butt_manager" unique_id=232009749]
+z_index = 10
+layout_mode = 0
+offset_left = 403.0
+offset_top = 770.0001
+offset_right = 446.0
+offset_bottom = 813.0001
+texture = ExtResource("6_bkxcj")
+stretch_mode = 2
+
+[node name="Deco17" type="TextureRect" parent="Butt_manager" unique_id=1614621688]
+z_index = 10
+layout_mode = 0
+offset_left = 374.0
+offset_top = 741.0001
+offset_right = 417.0
+offset_bottom = 784.0001
+texture = ExtResource("7_qv3vg")
+stretch_mode = 2
+
+[node name="Deco18" type="TextureRect" parent="Butt_manager" unique_id=1614197794]
+z_index = 10
+layout_mode = 0
+offset_left = 409.9999
+offset_top = 731.10004
+offset_right = 452.9999
+offset_bottom = 774.10004
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("8_qaier")
+stretch_mode = 2
+
+[node name="Deco19" type="TextureRect" parent="Butt_manager" unique_id=1704692877]
+z_index = 10
+layout_mode = 0
+offset_left = 403.0
+offset_top = 682.00006
+offset_right = 446.0
+offset_bottom = 725.00006
+texture = ExtResource("6_bkxcj")
+stretch_mode = 2
+
+[node name="Deco20" type="TextureRect" parent="Butt_manager" unique_id=1769641072]
+z_index = 10
+layout_mode = 0
+offset_left = 374.0
+offset_top = 653.00006
+offset_right = 417.0
+offset_bottom = 696.00006
+texture = ExtResource("7_qv3vg")
+stretch_mode = 2
+
+[node name="Deco21" type="TextureRect" parent="Butt_manager" unique_id=657515041]
+z_index = 10
+layout_mode = 0
+offset_left = 409.9999
+offset_top = 643.1
+offset_right = 452.9999
+offset_bottom = 686.1
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("8_qaier")
+stretch_mode = 2
+
+[node name="Deco22" type="TextureRect" parent="Butt_manager" unique_id=1667434209]
+z_index = 10
+layout_mode = 0
+offset_left = 403.0
+offset_top = 603.00006
+offset_right = 446.0
+offset_bottom = 646.00006
+texture = ExtResource("6_bkxcj")
+stretch_mode = 2
+
+[node name="Deco23" type="TextureRect" parent="Butt_manager" unique_id=912873657]
+z_index = 10
+layout_mode = 0
+offset_left = 374.0
+offset_top = 574.00006
+offset_right = 417.0
+offset_bottom = 617.00006
+texture = ExtResource("7_qv3vg")
+stretch_mode = 2
+
+[node name="Deco24" type="TextureRect" parent="Butt_manager" unique_id=220436597]
+z_index = 10
+layout_mode = 0
+offset_left = 409.9999
+offset_top = 564.1
+offset_right = 452.9999
+offset_bottom = 607.1
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("8_qaier")
+stretch_mode = 2
+
+[node name="Deco25" type="TextureRect" parent="Butt_manager" unique_id=996752720]
+z_index = 10
+layout_mode = 0
+offset_left = 403.0
+offset_top = 523.0
+offset_right = 446.0
+offset_bottom = 566.0
+texture = ExtResource("6_bkxcj")
+stretch_mode = 2
+
+[node name="Deco26" type="TextureRect" parent="Butt_manager" unique_id=1870673497]
+z_index = 10
+layout_mode = 0
+offset_left = 374.0
+offset_top = 494.00018
+offset_right = 417.0
+offset_bottom = 537.0002
+texture = ExtResource("7_qv3vg")
+stretch_mode = 2
+
+[node name="Deco28" type="TextureRect" parent="Butt_manager" unique_id=736856695]
+z_index = 10
+layout_mode = 0
+offset_left = 462.0
+offset_top = 844.00006
+offset_right = 505.0
+offset_bottom = 887.00006
+texture = ExtResource("6_bkxcj")
+stretch_mode = 2
+
+[node name="Deco29" type="TextureRect" parent="Butt_manager" unique_id=37042949]
+z_index = 10
+layout_mode = 0
+offset_left = 433.0
+offset_top = 815.00006
+offset_right = 476.0
+offset_bottom = 858.00006
+texture = ExtResource("7_qv3vg")
+stretch_mode = 2
+
+[node name="Deco30" type="TextureRect" parent="Butt_manager" unique_id=1468656089]
+z_index = 10
+layout_mode = 0
+offset_left = 468.9999
+offset_top = 805.1
+offset_right = 511.99988
+offset_bottom = 848.10004
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("8_qaier")
+stretch_mode = 2
+
+[node name="Deco31" type="TextureRect" parent="Butt_manager" unique_id=2104836086]
+z_index = 10
+layout_mode = 0
+offset_left = 462.0
+offset_top = 764.00006
+offset_right = 505.0
+offset_bottom = 807.00006
+texture = ExtResource("6_bkxcj")
+stretch_mode = 2
+
+[node name="Deco32" type="TextureRect" parent="Butt_manager" unique_id=1957791557]
+z_index = 10
+layout_mode = 0
+offset_left = 433.0
+offset_top = 735.00006
+offset_right = 476.0
+offset_bottom = 778.00006
+texture = ExtResource("7_qv3vg")
+stretch_mode = 2
+
+[node name="Deco33" type="TextureRect" parent="Butt_manager" unique_id=1275905685]
+z_index = 10
+layout_mode = 0
+offset_left = 468.9999
+offset_top = 725.1
+offset_right = 511.99988
+offset_bottom = 768.10004
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("8_qaier")
+stretch_mode = 2
+
+[node name="Deco34" type="TextureRect" parent="Butt_manager" unique_id=985888833]
+z_index = 10
+layout_mode = 0
+offset_left = 462.0
+offset_top = 684.00006
+offset_right = 505.0
+offset_bottom = 727.00006
+texture = ExtResource("6_bkxcj")
+stretch_mode = 2
+
+[node name="Deco35" type="TextureRect" parent="Butt_manager" unique_id=159674588]
+z_index = 10
+layout_mode = 0
+offset_left = 433.0
+offset_top = 655.00006
+offset_right = 476.0
+offset_bottom = 698.00006
+texture = ExtResource("7_qv3vg")
+stretch_mode = 2
+
+[node name="Deco36" type="TextureRect" parent="Butt_manager" unique_id=1976576366]
+z_index = 10
+layout_mode = 0
+offset_left = 468.9999
+offset_top = 645.1
+offset_right = 511.99988
+offset_bottom = 688.10004
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("8_qaier")
+stretch_mode = 2
+
+[node name="GUIMargin" type="MarginContainer" parent="Butt_manager" unique_id=505994937]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -457.0
+offset_bottom = -170.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Bottom" type="HBoxContainer" parent="Butt_manager/GUIMargin" unique_id=1577155335]
+z_index = 2
+custom_minimum_size = Vector2(1200, 700)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="Buttons" parent="Butt_manager/GUIMargin/Bottom" unique_id=1097751707 instance=ExtResource("9_yt4ka")]
+layout_mode = 2
+size_flags_stretch_ratio = 1.66
+texture = ExtResource("10_2tbsb")
+
+[node name="BackToMenu" type="TextureButton" parent="Butt_manager/GUIMargin/Bottom/Buttons" unique_id=2109342943]
+custom_minimum_size = Vector2(500, 100)
+layout_mode = 0
+offset_left = 352.0
+offset_top = 581.0
+offset_right = 852.0
+offset_bottom = 681.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource("11_oqohv")
+texture_normal = ExtResource("12_vli6s")
+texture_pressed = ExtResource("13_25a0c")
+texture_hover = ExtResource("14_swll3")
+texture_focused = ExtResource("14_swll3")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Butt_manager/GUIMargin/Bottom/Buttons/BackToMenu" unique_id=622766063]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("11_oqohv")
+theme_override_font_sizes/font_size = 80
+text = "Back to menu"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="Butt_manager/GUIMargin/Bottom/Buttons" unique_id=1323181432]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -141.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("11_oqohv")
+theme_override_colors/font_color = Color(0.6627451, 0.43529412, 0, 1)
+theme_override_font_sizes/font_size = 60
+text = "Use arrow keys to navigate menu. press 
+enter to select an option. press esc to 
+cancel an action.
+
+destroy all enemy combatants to win."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Title" type="Label" parent="Butt_manager/GUIMargin" unique_id=630595605]
+z_index = 1
+layout_mode = 2
+theme = ExtResource("11_oqohv")
+theme_override_colors/font_color = Color(0.92156863, 0.09803922, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 300
+text = "Mech vs bots"
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Butt_manager" unique_id=958244187]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[connection signal="pressed" from="Butt_manager/GUIMargin/Bottom/Buttons/BackToMenu" to="Butt_manager" method="_on_back_to_menu_pressed"]
+[connection signal="pressed" from="Butt_manager/GUIMargin/Bottom/Buttons/BackToMenu" to="Butt_manager" method="_on_continue_pressed"]

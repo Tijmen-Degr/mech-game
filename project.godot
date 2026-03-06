@@ -11,13 +11,14 @@ config_version=5
 [application]
 
 config/name="Mech-Game"
-run/main_scene="uid://c78fsmfldx1uy"
+run/main_scene="uid://d340ptj27ynxe"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
 Debug="*uid://c5cmithpp0f0v"
+Globals="*uid://dgkcj8vjaxosa"
 Data="*uid://ba2jhewsrs5fa"
 
 [display]

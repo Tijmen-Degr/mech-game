@@ -1,21 +1,21 @@
-class_name EnemyButt extends TextureButton
+class_name EnemyButt extends BattleActorButt
 
-const HIT_TEXT: PackedScene = preload("res://hit_text.tscn")
-
-var data: BattleActor = Data.enemies["Archer Front"].duplicate()
+signal atb_ready()
 
 @onready var _atb_bar: ATB_bar = $ATB_bar
 
 func _ready() -> void:
-	#TODO load sprite
-	data.hp_changed.connect(_on_data_hp_changed)
-	
+	#TODO load data based on overworld title
+	set_data(Data.enemies["Archer Front"].duplicate())
+
+func _on_atb_bar_filled() -> void:
+	atb_ready.emit()
+	_atb_bar.reset()
+
 func _on_data_hp_changed(hp: int, change: int) -> void:
-	var hit_text: Label = HIT_TEXT.instantiate()
-	hit_text.text = str(abs(change))
-	add_child(hit_text)
-	hit_text.position = Vector2(size.x * 0.25, 4)
+	super(hp, change)
 	
 	if hp <= 0:
+		_atb_bar.stop()
 		await get_tree().create_timer(1.0).timeout
 		queue_free()

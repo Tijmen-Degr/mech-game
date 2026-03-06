@@ -17,12 +17,14 @@ func reset() -> void:
 	value = min_value
 	set_process(true)
 
+func stop() -> void:
+	set_process(false)
+
 func _process(_delta: float) -> void:
 	value += SPEED_BASE
 
-	if value >= max_value:
-		value = max_value
-		set_process(false)
+	if is_equal_approx(value, max_value):
+		stop()
 		_anim.play("highlight")
 		filled.emit()
 		#todo begin animation

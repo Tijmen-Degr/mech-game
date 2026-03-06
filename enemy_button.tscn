@@ -24,3 +24,5 @@ offset_bottom = 107.0
 scale = Vector2(0.5, 0.5)
 value = 30.0
 show_percentage = false
+
+[connection signal="filled" from="ATB_bar" to="." method="_on_atb_bar_filled"]

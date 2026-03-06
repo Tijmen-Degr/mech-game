@@ -1,0 +1,200 @@
+[gd_scene format=3 uid="uid://d340ptj27ynxe"]
+
+[ext_resource type="PackedScene" uid="uid://bgdert5q87ro6" path="res://9_slice_window_default.tscn" id="1_jix8l"]
+[ext_resource type="PackedScene" uid="uid://d0bo3tvptiv0k" path="res://Tiled_bg.tscn" id="1_nlkkf"]
+[ext_resource type="Texture2D" uid="uid://bmhbdmw20ckbg" path="res://UI/Complete_UI_Essential_Pack_Free/01_Flat_Theme/Sprites/UI_Flat_FrameSlot02a.png" id="2_glbon"]
+[ext_resource type="Theme" uid="uid://caal0iyk0y32" path="res://default_theme.tres" id="2_nlkkf"]
+[ext_resource type="Texture2D" uid="uid://eeg1i2aoxx6m" path="res://Cog Wheels - Gears/Cog Wheels - Gears/Sprites/Bronze Gear Wheels/Gear 1 - Bronze_00.png" id="2_qe12f"]
+[ext_resource type="Script" uid="uid://bu2x4xe8yrk3k" path="res://main_menu.gd" id="2_w44g7"]
+[ext_resource type="Texture2D" uid="uid://dm5fgbi4725gi" path="res://Cog Wheels - Gears/Cog Wheels - Gears/Sprites/Bronze Gear Wheels/Gear 2 - Bronze_03.png" id="3_8qtwp"]
+[ext_resource type="Texture2D" uid="uid://q01op44hepbp" path="res://UI/Complete_UI_Essential_Pack_Free/01_Flat_Theme/Sprites/UI_Flat_FrameSlot02b.png" id="3_nlkkf"]
+[ext_resource type="Texture2D" uid="uid://vjrj0rh4fyqe" path="res://Cog Wheels - Gears/Cog Wheels - Gears/Sprites/Bronze Gear Wheels/Gear 5 - Bronze_01.png" id="4_dy7ct"]
+[ext_resource type="Texture2D" uid="uid://dkvq65wigtp8o" path="res://UI/Complete_UI_Essential_Pack_Free/01_Flat_Theme/Sprites/UI_Flat_FrameMarker02a.png" id="4_qe12f"]
+[ext_resource type="Texture2D" uid="uid://dd4im4jhw6bnn" path="res://Cog Wheels - Gears/Cog Wheels - Gears/Sprites/Silver Gear Wheels/Gear 1 - Silver_00.png" id="5_j5v2v"]
+[ext_resource type="Texture2D" uid="uid://cxowd8na5c2nn" path="res://Cog Wheels - Gears/Cog Wheels - Gears/Sprites/Silver Gear Wheels/Gear 2 - Silver_02.png" id="6_iotk1"]
+[ext_resource type="Texture2D" uid="uid://d2j1hn016un0f" path="res://Cog Wheels - Gears/Cog Wheels - Gears/Sprites/Silver Gear Wheels/Gear 5 - Silver_01.png" id="7_iotk1"]
+[ext_resource type="Texture2D" uid="uid://bjbbek4mmymcb" path="res://UI/NineSlice/ExampleSpriteGold.png" id="9_iotk1"]
+
+[node name="MainMenu" type="Node2D" unique_id=1202430635]
+
+[node name="Node2D" parent="." unique_id=82154139 instance=ExtResource("1_nlkkf")]
+z_index = -1
+position = Vector2(-564, -576)
+scale = Vector2(1, 0.9992346)
+
+[node name="Butt_manager" type="Control" parent="." unique_id=1435686891]
+custom_minimum_size = Vector2(1920, 1080)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_right = 1921.0
+offset_bottom = 1080.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+script = ExtResource("2_w44g7")
+metadata/_edit_lock_ = true
+
+[node name="Deco" type="TextureRect" parent="Butt_manager" unique_id=955769104]
+z_index = 10
+layout_mode = 0
+offset_left = 1304.0
+offset_top = 848.00006
+offset_right = 1347.0
+offset_bottom = 891.00006
+texture = ExtResource("2_qe12f")
+stretch_mode = 2
+
+[node name="Deco2" type="TextureRect" parent="Butt_manager" unique_id=934948648]
+z_index = 10
+layout_mode = 0
+offset_left = 1275.0
+offset_top = 819.00006
+offset_right = 1318.0
+offset_bottom = 862.00006
+texture = ExtResource("3_8qtwp")
+stretch_mode = 2
+
+[node name="Deco3" type="TextureRect" parent="Butt_manager" unique_id=2095016852]
+z_index = 10
+layout_mode = 0
+offset_left = 1311.0
+offset_top = 809.1
+offset_right = 1354.0
+offset_bottom = 849.1
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("4_dy7ct")
+stretch_mode = 2
+
+[node name="Deco4" type="TextureRect" parent="Butt_manager" unique_id=1944001386]
+z_index = 10
+layout_mode = 0
+offset_left = 603.0
+offset_top = 680.00006
+offset_right = 646.0
+offset_bottom = 723.00006
+texture = ExtResource("5_j5v2v")
+stretch_mode = 2
+
+[node name="Deco5" type="TextureRect" parent="Butt_manager" unique_id=1145783884]
+z_index = 10
+layout_mode = 0
+offset_left = 574.0
+offset_top = 651.00006
+offset_right = 617.0
+offset_bottom = 694.00006
+texture = ExtResource("6_iotk1")
+stretch_mode = 2
+
+[node name="Deco6" type="TextureRect" parent="Butt_manager" unique_id=1470056449]
+z_index = 10
+layout_mode = 0
+offset_left = 609.99994
+offset_top = 641.1
+offset_right = 652.99994
+offset_bottom = 684.1
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("7_iotk1")
+stretch_mode = 2
+
+[node name="GUIMargin" type="MarginContainer" parent="Butt_manager" unique_id=505994937]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -219.0
+offset_bottom = -170.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Bottom" type="HBoxContainer" parent="Butt_manager/GUIMargin" unique_id=1577155335]
+custom_minimum_size = Vector2(800, 280)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="Buttons" parent="Butt_manager/GUIMargin/Bottom" unique_id=1097751707 instance=ExtResource("1_jix8l")]
+layout_mode = 2
+size_flags_stretch_ratio = 1.66
+texture = ExtResource("9_iotk1")
+
+[node name="Continue" type="TextureButton" parent="Butt_manager/GUIMargin/Bottom/Buttons" unique_id=2109342943]
+custom_minimum_size = Vector2(500, 100)
+layout_mode = 0
+offset_left = 147.0
+offset_top = 29.0
+offset_right = 647.0
+offset_bottom = 129.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource("2_nlkkf")
+texture_normal = ExtResource("2_glbon")
+texture_pressed = ExtResource("3_nlkkf")
+texture_hover = ExtResource("4_qe12f")
+texture_focused = ExtResource("4_qe12f")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Butt_manager/GUIMargin/Bottom/Buttons/Continue" unique_id=622766063]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_nlkkf")
+theme_override_font_sizes/font_size = 80
+text = "start game!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Controls" type="TextureButton" parent="Butt_manager/GUIMargin/Bottom/Buttons" unique_id=267000858]
+custom_minimum_size = Vector2(500, 100)
+layout_mode = 0
+offset_left = 147.0
+offset_top = 159.0
+offset_right = 647.0
+offset_bottom = 259.0
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme = ExtResource("2_nlkkf")
+texture_normal = ExtResource("2_glbon")
+texture_pressed = ExtResource("3_nlkkf")
+texture_hover = ExtResource("4_qe12f")
+texture_focused = ExtResource("4_qe12f")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Butt_manager/GUIMargin/Bottom/Buttons/Controls" unique_id=803140282]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_nlkkf")
+theme_override_font_sizes/font_size = 80
+text = "Controls"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="Butt_manager/GUIMargin" unique_id=630595605]
+layout_mode = 2
+theme = ExtResource("2_nlkkf")
+theme_override_colors/font_color = Color(0.92156863, 0.09803922, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 200
+text = "Mech vs bots"
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Butt_manager" unique_id=958244187]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[connection signal="pressed" from="Butt_manager/GUIMargin/Bottom/Buttons/Continue" to="Butt_manager" method="_on_continue_pressed"]
+[connection signal="pressed" from="Butt_manager/GUIMargin/Bottom/Buttons/Controls" to="Butt_manager" method="_on_controls_pressed"]
